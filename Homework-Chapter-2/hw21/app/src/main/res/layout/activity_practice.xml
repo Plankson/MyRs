@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:src="@mipmap/back" />
+
+    <ImageView
+        android:id="@+id/tb"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/back"
+        android:src="@mipmap/tb" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="27dp"
+        android:text="2021-7-13 获得"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="坐姿模范生"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="恭喜你成为大力自习室中最优秀的坐姿模范生！"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="表扬次数 50/50 次"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_circle_shape"
+        android:text="去自习"
+        android:textColor="#708090"
+        android:textSize="23dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+</RelativeLayout>
