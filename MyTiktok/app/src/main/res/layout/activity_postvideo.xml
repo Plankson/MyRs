@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sd_cover"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:actualImageScaleType="centerCrop"
+            app:placeholderImage="@drawable/bg_round_rect"
+            android:layout_margin="20dp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                app:lottie_rawRes="@raw/material_wave_loading"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="false"
+                android:visibility="invisible"
+                android:background="@color/gray"
+                />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sd_video"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:actualImageScaleType="centerCrop"
+                app:placeholderImage="@drawable/bg_round_rect"
+                android:layout_margin="20dp"
+                >
+            </com.facebook.drawee.view.SimpleDraweeView>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btn_cover"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="选择封面"
+                android:layout_gravity="center"
+
+                />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:text="选择视频"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/et_extra_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="3"
+            android:layout_marginTop="20dp"
+            android:padding="6dp"
+            android:layout_marginHorizontal="20dp"
+            android:hint="请输入备注"
+            android:background="@drawable/bg_round_rect"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="上传"
+            android:textSize="30sp" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/material_wave_loading"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>
